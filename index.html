@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<title>Encriptador de texto</title>
+</head>
+
+<body>
+
+	<!-- Cabecera -->
+	<header class="titulo">
+		<img class="logo" src="./img/Logo.png" alt="LogoAlura">
+	</header>
+
+	<main>
+
+		<!-- texto que va a ser encriptado/desencriptado -->
+		<section class="sectionTxtArea">
+
+			<textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+
+			<!-- texto pequeño -->
+			<div class="info">
+
+				<img class="img2" src="./img/bi_exclamation-circle-fill.png" alt="img-rota">
+				<h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
+			</div>
+
+		</section>
+
+
+		<section class="containerMensaje">
+
+			<!-- Área para mostrar el texto encriptado/desencriptado -->
+			<textarea class="mensaje" cols="20" rows="10" placeholder="Ningún mensaje fue encontrado" disabled="true"></textarea>
+		</section>
+
+		<!-- botones -->
+		<div class="botones">
+			<button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+			<!-- Botón copiar -->
+			<button style="display: none;" class="btn-copiar" onclick="copiar()">Copiar</button>
+			<button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+		</div>
+
+
+
+	</main>
+
+	<footer>
+		<div class="footer-credits container">
+			Hecho por Yansel Martinez 2023
+		</div>
+	</footer>
+	<script async src="./script.js"></script>
+</body>
+
+</html>
